@@ -102,7 +102,7 @@ export default function Home() {
           <div className="container mx-auto max-w-5xl text-center relative z-10">
             <div className="mb-12">
               <img 
-                src="@assets/_124054222_gettyimages-1158895380_1754493452971.jpg" 
+                src="/crianca-celular.jpg" 
                 alt="Criança preocupada olhando para o celular" 
                 className="w-full max-w-md mx-auto rounded-2xl shadow-lg mb-8 animate-float"
               />
