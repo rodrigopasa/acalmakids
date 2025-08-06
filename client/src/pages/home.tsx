@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Moon, Heart, Smartphone, BookOpen, Headphones, Gift, User, Star, Shield, Check, Lock, CreditCard, QrCode, ChevronDown, Mail, Download, Undo } from "lucide-react";
+import { Moon, Heart, Smartphone, BookOpen, Headphones, Gift, User, Star, Shield, Check, Lock, CreditCard, QrCode, ChevronDown, Mail, Download, Undo, Eye } from "lucide-react";
 import { useEffect } from "react";
+
 
 export default function Home() {
   useEffect(() => {
@@ -95,6 +96,140 @@ export default function Home() {
           <div className="absolute top-20 left-10 w-4 h-4 bg-purple-300 rounded-full animate-float opacity-60"></div>
           <div className="absolute top-40 right-20 w-6 h-6 bg-pink-300 rounded-full animate-bounce-gentle opacity-50"></div>
           <div className="absolute bottom-20 left-20 w-3 h-3 bg-blue-300 rounded-full animate-pulse-soft opacity-70"></div>
+        </section>
+
+        {/* PDF Preview Section */}
+        <section className="py-16 px-4 bg-white">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                <span className="gradient-text">Veja uma prévia</span> do conteúdo que você vai receber
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Explore algumas páginas dos nossos materiais exclusivos e veja a qualidade do conteúdo que preparamos para transformar a rotina da sua família
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="animate-slide-up">
+                <Card className="w-full max-w-md mx-auto bg-gradient-to-br from-white to-green-50 shadow-xl hover:shadow-2xl transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="text-center mb-4">
+                      <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <BookOpen className="text-2xl text-green-600" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-800 mb-2">10 Contos Clássicos</h3>
+                      <p className="text-sm text-gray-600 mb-4">Histórias atemporais para criar momentos especiais com seu filho</p>
+                      
+                      <div className="flex items-center justify-center mb-4 text-sm text-green-600 bg-green-50 px-3 py-2 rounded-full">
+                        <Eye className="mr-2 w-4 h-4" />
+                        Prévia - Histórias incluídas
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-lg shadow-inner p-4 mb-6">
+                      <div className="space-y-3 text-left">
+                        <div className="flex items-center space-x-3 p-2 bg-green-50 rounded-lg">
+                          <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">1</div>
+                          <span className="text-sm font-medium text-gray-800">Os Três Porquinhos</span>
+                        </div>
+                        <div className="flex items-center space-x-3 p-2 bg-green-50 rounded-lg">
+                          <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">2</div>
+                          <span className="text-sm font-medium text-gray-800">Chapeuzinho Vermelho</span>
+                        </div>
+                        <div className="flex items-center space-x-3 p-2 bg-green-50 rounded-lg">
+                          <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">3</div>
+                          <span className="text-sm font-medium text-gray-800">João e o Pé de Feijão</span>
+                        </div>
+                        <div className="flex items-center space-x-3 p-2 bg-green-50 rounded-lg">
+                          <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">4</div>
+                          <span className="text-sm font-medium text-gray-800">O Mágico de OZ</span>
+                        </div>
+                        <div className="text-center pt-2">
+                          <span className="text-xs text-green-600 font-semibold">+ 6 histórias completas</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="text-center">
+                      <p className="text-xs text-gray-500 mb-3">
+                        ✨ Histórias completas com ilustrações disponíveis após a compra
+                      </p>
+                      <Button size="sm" variant="outline" className="text-green-600 border-green-200 hover:bg-green-50">
+                        <BookOpen className="mr-2 w-4 h-4" />
+                        Ver amostra do primeiro conto
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+              
+              <div className="animate-slide-up">
+                <Card className="w-full max-w-md mx-auto bg-gradient-to-br from-white to-blue-50 shadow-xl hover:shadow-2xl transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="text-center">
+                      <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Smartphone className="text-2xl text-blue-600" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-800 mb-2">Guia do Tempo de Tela</h3>
+                      <p className="text-sm text-gray-600 mb-4">Estratégias práticas para uma infância equilibrada na era digital</p>
+                      
+                      <div className="flex items-center justify-center mb-6 text-sm text-blue-600 bg-blue-50 px-3 py-2 rounded-full">
+                        <Eye className="mr-2 w-4 h-4" />
+                        Prévia - Principais tópicos
+                      </div>
+
+                      <div className="bg-white rounded-lg shadow-inner p-6 mb-6">
+                        <div className="space-y-4 text-left">
+                          <div className="flex items-start space-x-3">
+                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                            <div>
+                              <h4 className="font-semibold text-gray-800">Capítulo 1: Entendendo o Vício Digital</h4>
+                              <p className="text-sm text-gray-600">Como as telas afetam o desenvolvimento infantil</p>
+                            </div>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                            <div>
+                              <h4 className="font-semibold text-gray-800">Capítulo 2: Estabelecendo Limites</h4>
+                              <p className="text-sm text-gray-600">Estratégias práticas para reduzir o tempo de tela</p>
+                            </div>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                            <div>
+                              <h4 className="font-semibold text-gray-800">Capítulo 3: Alternativas Saudáveis</h4>
+                              <p className="text-sm text-gray-600">Atividades que substituem as telas de forma natural</p>
+                            </div>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                            <div>
+                              <h4 className="font-semibold text-gray-800">Capítulo 4: Criando Rotinas</h4>
+                              <p className="text-sm text-gray-600">Como estabelecer uma rotina equilibrada</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <p className="text-xs text-gray-500">
+                        ✨ Guia completo disponível após a compra
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <Button asChild className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-full font-semibold text-lg px-8 py-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                <a href="#comprar">
+                  <Heart className="mr-2 w-5 h-5" />
+                  Quero o conteúdo completo agora!
+                </a>
+              </Button>
+            </div>
+          </div>
         </section>
 
         {/* Problem Solution Section */}

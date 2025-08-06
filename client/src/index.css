@@ -159,3 +159,14 @@
   40% { transform: translateY(-5px); }
   60% { transform: translateY(-3px); }
 }
+
+/* PDF Viewer Styles */
+.react-pdf__Page {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.react-pdf__Page__canvas {
+  max-width: 100% !important;
+  height: auto !important;
+}
