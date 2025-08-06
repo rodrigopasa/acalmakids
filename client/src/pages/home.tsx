@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Moon, Heart, Smartphone, BookOpen, Headphones, Gift, User, Star, Shield, Check, Lock, CreditCard, QrCode, ChevronDown, Mail, Download, Undo, Eye } from "lucide-react";
 import { useEffect } from "react";
+import { PDFPreview } from "@/components/PDFPreview";
 
 
 export default function Home() {
@@ -112,112 +113,23 @@ export default function Home() {
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div className="animate-slide-up">
-                <Card className="w-full max-w-md mx-auto bg-gradient-to-br from-white to-green-50 shadow-xl hover:shadow-2xl transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="text-center mb-4">
-                      <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <BookOpen className="text-2xl text-green-600" />
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-800 mb-2">10 Contos Clássicos</h3>
-                      <p className="text-sm text-gray-600 mb-4">Histórias atemporais para criar momentos especiais com seu filho</p>
-                      
-                      <div className="flex items-center justify-center mb-4 text-sm text-green-600 bg-green-50 px-3 py-2 rounded-full">
-                        <Eye className="mr-2 w-4 h-4" />
-                        Prévia - Histórias incluídas
-                      </div>
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-inner p-4 mb-6">
-                      <div className="space-y-3 text-left">
-                        <div className="flex items-center space-x-3 p-2 bg-green-50 rounded-lg">
-                          <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">1</div>
-                          <span className="text-sm font-medium text-gray-800">Os Três Porquinhos</span>
-                        </div>
-                        <div className="flex items-center space-x-3 p-2 bg-green-50 rounded-lg">
-                          <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">2</div>
-                          <span className="text-sm font-medium text-gray-800">Chapeuzinho Vermelho</span>
-                        </div>
-                        <div className="flex items-center space-x-3 p-2 bg-green-50 rounded-lg">
-                          <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">3</div>
-                          <span className="text-sm font-medium text-gray-800">João e o Pé de Feijão</span>
-                        </div>
-                        <div className="flex items-center space-x-3 p-2 bg-green-50 rounded-lg">
-                          <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">4</div>
-                          <span className="text-sm font-medium text-gray-800">O Mágico de OZ</span>
-                        </div>
-                        <div className="text-center pt-2">
-                          <span className="text-xs text-green-600 font-semibold">+ 6 histórias completas</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="text-center">
-                      <p className="text-xs text-gray-500 mb-3">
-                        ✨ Histórias completas com ilustrações disponíveis após a compra
-                      </p>
-                      <Button size="sm" variant="outline" className="text-green-600 border-green-200 hover:bg-green-50">
-                        <BookOpen className="mr-2 w-4 h-4" />
-                        Ver amostra do primeiro conto
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
+                <PDFPreview
+                  title="10 Contos Clássicos"
+                  description="Histórias atemporais para criar momentos especiais com seu filho"
+                  pdfUrl="/contos-classicos.pdf"
+                  maxPages={4}
+                  icon="book"
+                />
               </div>
               
               <div className="animate-slide-up">
-                <Card className="w-full max-w-md mx-auto bg-gradient-to-br from-white to-blue-50 shadow-xl hover:shadow-2xl transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="text-center">
-                      <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Smartphone className="text-2xl text-blue-600" />
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-800 mb-2">Guia do Tempo de Tela</h3>
-                      <p className="text-sm text-gray-600 mb-4">Estratégias práticas para uma infância equilibrada na era digital</p>
-                      
-                      <div className="flex items-center justify-center mb-6 text-sm text-blue-600 bg-blue-50 px-3 py-2 rounded-full">
-                        <Eye className="mr-2 w-4 h-4" />
-                        Prévia - Principais tópicos
-                      </div>
-
-                      <div className="bg-white rounded-lg shadow-inner p-6 mb-6">
-                        <div className="space-y-4 text-left">
-                          <div className="flex items-start space-x-3">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
-                            <div>
-                              <h4 className="font-semibold text-gray-800">Capítulo 1: Entendendo o Vício Digital</h4>
-                              <p className="text-sm text-gray-600">Como as telas afetam o desenvolvimento infantil</p>
-                            </div>
-                          </div>
-                          <div className="flex items-start space-x-3">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
-                            <div>
-                              <h4 className="font-semibold text-gray-800">Capítulo 2: Estabelecendo Limites</h4>
-                              <p className="text-sm text-gray-600">Estratégias práticas para reduzir o tempo de tela</p>
-                            </div>
-                          </div>
-                          <div className="flex items-start space-x-3">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
-                            <div>
-                              <h4 className="font-semibold text-gray-800">Capítulo 3: Alternativas Saudáveis</h4>
-                              <p className="text-sm text-gray-600">Atividades que substituem as telas de forma natural</p>
-                            </div>
-                          </div>
-                          <div className="flex items-start space-x-3">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
-                            <div>
-                              <h4 className="font-semibold text-gray-800">Capítulo 4: Criando Rotinas</h4>
-                              <p className="text-sm text-gray-600">Como estabelecer uma rotina equilibrada</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <p className="text-xs text-gray-500">
-                        ✨ Guia completo disponível após a compra
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
+                <PDFPreview
+                  title="Guia do Tempo de Tela"
+                  description="Estratégias práticas para uma infância equilibrada na era digital"
+                  pdfUrl="/guia-tempo-tela.pdf"
+                  maxPages={5}
+                  icon="guide"
+                />
               </div>
             </div>
 
