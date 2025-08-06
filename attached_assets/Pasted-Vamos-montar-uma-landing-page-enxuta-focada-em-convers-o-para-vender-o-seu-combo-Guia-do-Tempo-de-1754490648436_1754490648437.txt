@@ -1,0 +1,90 @@
+Vamos montar uma landing page enxuta, focada em conversão, para vender o seu combo: Guia do Tempo de Tela + Contos em PDF + Áudios narrados.
+
+✅ Estrutura da Landing Page (modelo validado para vendas)
+1. Seção 1 – Cabeçalho com promessa forte (Hero Section)
+html
+Copiar
+Editar
+<h1>📱 Diminua o tempo de tela e fortaleça o vínculo com seu filho</h1>
+<p>Descubra como criar uma rotina saudável com o <strong>Guia do Tempo de Tela</strong> + <strong>10 histórias clássicas infantis em PDF</strong> + <strong>áudios narrados para dormir</strong></p>
+<a href="#comprar" class="botao-grande">Quero ajudar meu filho agora!</a>
+2. Seção 2 – O problema e a solução
+html
+Copiar
+Editar
+<h2>Seu filho vive no celular e tem dificuldade para dormir?</h2>
+<p>Você não está sozinho. Com tantas telas e estímulos, é cada vez mais difícil manter uma rotina equilibrada.</p>
+<p>Este combo exclusivo ajuda pais a:</p>
+<ul>
+  <li>✅ Reduzir o tempo de tela com equilíbrio</li>
+  <li>✅ Criar momentos especiais com histórias antes de dormir</li>
+  <li>✅ Fortalecer a conexão entre pais e filhos</li>
+</ul>
+3. Seção 3 – O que você vai receber
+html
+Copiar
+Editar
+<h2>Você vai receber:</h2>
+<ul>
+  <li>📘 <strong>Guia do Tempo de Tela</strong>: estratégias práticas e eficazes para uma infância equilibrada</li>
+  <li>📖 <strong>10 Contos clássicos infantis em PDF</strong>: histórias para ler com seu filho</li>
+  <li>🎧 <strong>10 Áudios narrados</strong>: prontos para escutar na hora de dormir</li>
+</ul>
+<p><strong>Bônus:</strong> Dicas de como contar histórias que encantam (material complementar gratuito!)</p>
+4. Seção 4 – Depoimentos (ou frases impactantes se ainda não tiver depoimentos reais)
+html
+Copiar
+Editar
+<h2>Quem já usou, aprovou!</h2>
+<blockquote>“Depois que comecei a usar o combo, meu filho dorme muito mais rápido. Os áudios são mágicos!” – Ana Paula, mãe do Lucas</blockquote>
+<blockquote>“O guia me fez repensar o quanto o celular estava roubando momentos importantes aqui em casa.” – Felipe, pai da Maria</blockquote>
+5. Seção 5 – Chamada para ação com urgência
+html
+Copiar
+Editar
+<h2>Comece hoje a mudar a rotina do seu filho</h2>
+<p>Todo o combo por apenas <strong>R$ 19,90</strong> (por tempo limitado!)</p>
+<a href="#comprar" class="botao-destaque">Quero esse combo agora!</a>
+<p>Pagamento 100% seguro • Acesso imediato após a compra</p>
+6. Seção 6 – Garantia
+html
+Copiar
+Editar
+<h2>🛡️ Garantia total</h2>
+<p>Se você não gostar do material por qualquer motivo, devolvemos seu dinheiro em até 7 dias. Sem perguntas.</p>
+7. Seção 7 – Perguntas frequentes (FAQ)
+html
+Copiar
+Editar
+<h2>Dúvidas Frequentes</h2>
+<h3>Como recebo os materiais?</h3>
+<p>Após a compra, você receberá um e-mail com os arquivos para download.</p>
+
+<h3>Os áudios funcionam em celular?</h3>
+<p>Sim, você pode ouvir no celular, tablet ou computador.</p>
+
+<h3>Posso pagar com Pix ou cartão?</h3>
+<p>Sim, aceitamos Pix, cartão de crédito e boleto.</p>
+8. Seção 8 – Botão final de compra com ancoragem
+html
+Copiar
+Editar
+<div id="comprar">
+  <h2>🌙 Leve agora o combo completo por R$ 19,90</h2>
+  <a href="LINK_DO_CHECKOUT" class="botao-destaque">Quero transformar a rotina do meu filho!</a>
+</div>
+🎨 Estilo visual sugerido:
+Cores suaves e infantis (tons de azul, lilás, verde ou amarelo pastel)
+
+Ilustrações de crianças dormindo, lendo com os pais ou com fones de ouvido
+
+Ícones visuais para cada item (livro, áudio, celular com X vermelho, etc.)
+
+Use fontes arredondadas e amigáveis (como "Poppins" ou "Nunito")
+
+🚀 Próximos Passos:
+Deseja que eu monte esse HTML completo para você? (simples e pronto para subir)
+
+Ou vai usar um page builder como Elementor, Divi, Bricks, etc.?
+
+Se quiser, posso adaptar esse modelo direto no Elementor ou gerar o código completo em HTML com TailwindCSS. Me diga qual caminho você prefere que eu sigo já com o visual!
