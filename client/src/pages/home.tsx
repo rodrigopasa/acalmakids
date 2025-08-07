@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Moon, Heart, Smartphone, BookOpen, Headphones, Gift, User, Star, Shield, Check, Lock, CreditCard, QrCode, ChevronDown, Mail, Download, Undo, Eye } from "lucide-react";
 import { useEffect } from "react";
 import { PDFPreview } from "@/components/PDFPreview";
+import childImage from "@assets/ChatGPT Image 7 de ago. de 2025, 12_46_31_1754586753926.png";
 
 
 export default function Home() {
@@ -54,7 +55,7 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="text-center lg:text-left animate-slide-up order-2 lg:order-1">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight mb-4 md:mb-6">
-                  📱 Diminua o tempo de tela e <span className="gradient-text">fortaleça o vínculo</span> com seu filho
+                  📱Seu Filho, Seja um Bebê ou uma Criança, Já Parece <span className="gradient-text">Hipnotizado Pelas Telas?</span>​
                 </h1>
                 <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 md:mb-8 leading-relaxed">
                   Descubra como criar uma rotina saudável com o <strong>Guia do Tempo de Tela</strong> + <strong>10 histórias clássicas infantis em PDF</strong> + <strong>áudios narrados para dormir</strong>
@@ -63,19 +64,25 @@ export default function Home() {
                   <Button asChild size="lg" className="w-full sm:w-auto bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white rounded-full font-semibold text-lg md:text-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 hover:scale-105 transition-all duration-300 animate-pulse-soft px-6 md:px-8 py-3 md:py-4">
                     <a href="#comprar" className="flex items-center justify-center">
                       <Heart className="mr-2 md:mr-3 animate-bounce-gentle w-5 h-5 md:w-6 md:h-6" />
-                      <span className="text-base md:text-lg">Quero ajudar meu filho agora!</span>
+                      <span className="text-base md:text-lg">QUERO AJUDAR MEU FILHO AGORA</span>
                     </a>
                   </Button>
-                  <div className="flex items-center justify-center lg:justify-start text-sm md:text-base text-gray-500 bg-green-50 px-4 py-2 rounded-full">
-                    <Shield className="mr-2 text-green-600 w-4 h-4 md:w-5 md:h-5" />
-                    <span className="font-medium">Garantia de 7 dias</span>
+                  <div className="flex flex-col gap-2 items-center lg:items-start">
+                    <div className="flex items-center justify-center lg:justify-start text-sm md:text-base text-green-700 bg-green-50 px-4 py-2 rounded-full">
+                      <Shield className="mr-2 text-green-600 w-4 h-4 md:w-5 md:h-5" />
+                      <span className="font-medium">✅ Garantia de 7 dias</span>
+                    </div>
+                    <div className="flex items-center justify-center lg:justify-start text-lg md:text-xl text-orange-700 bg-orange-50 px-4 py-2 rounded-full font-bold">
+                      <CreditCard className="mr-2 text-orange-600 w-4 h-4 md:w-5 md:h-5" />
+                      <span>💳 Apenas R$ 19,90 – Por tempo limitado!</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="relative animate-float order-1 lg:order-2 mb-8 lg:mb-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                  alt="Família lendo histórias antes de dormir" 
+                  src={childImage} 
+                  alt="Criança hipnotizada pela tela do celular" 
                   className="rounded-2xl shadow-2xl w-full hover:shadow-3xl transition-shadow duration-500"
                 />
                 <div className="absolute -bottom-2 md:-bottom-4 -right-2 md:-right-4 bg-gradient-to-r from-yellow-400 to-orange-400 p-3 md:p-4 rounded-2xl shadow-lg animate-bounce-gentle">
