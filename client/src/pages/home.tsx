@@ -10,6 +10,7 @@ import contosClassicosImage from "@assets/4aa56f11d45_1754587158206.png";
 import guiaTempoTelaCard from "@assets/54ee77c2baada501_1754588200414.png";
 import contosClassicosCard from "@assets/4aa56f11d45_1754588200415.png";
 import acalmaKidsLogo from "@assets/ChatGPT Image 7 de ago. de 2025, 14_41_31_1754588504433.png";
+import audioIcon from "@assets/unnamed_1754588765007.png";
 
 
 export default function Home() {
@@ -164,11 +165,11 @@ export default function Home() {
               
               {/* Guia do Tempo de Tela */}
               <div className="animate-slide-up">
-                <Card className="w-full max-w-md mx-auto bg-gradient-to-br from-white to-purple-50 shadow-xl hover:shadow-2xl transition-all duration-300 group">
+                <Card className="w-full max-w-md mx-auto bg-gradient-to-br from-white to-orange-50 shadow-xl hover:shadow-2xl transition-all duration-300 group">
                   <CardContent className="p-6">
                     <div className="text-center mb-4">
-                      <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Smartphone className="text-2xl text-purple-600" />
+                      <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Smartphone className="text-2xl text-orange-500" />
                       </div>
                       <h3 className="text-xl font-bold text-gray-800 mb-2">Guia do Tempo de Tela</h3>
                       <p className="text-sm text-gray-600 mb-4">Estratégias práticas para uma infância equilibrada na era digital</p>
@@ -205,8 +206,50 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Audio Preview Section */}
+            <div className="mt-16 text-center">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
+                <span className="gradient-text">Ouça uma prévia</span> dos áudios narrados
+              </h3>
+              <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                Histórias clássicas narradas com carinho para criar momentos especiais na hora de dormir
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-8">
+                <Card className="bg-gradient-to-br from-white to-orange-50 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex flex-col items-center">
+                      <img src={audioIcon} alt="Ícone de áudio" className="w-16 h-16 mb-4" />
+                      <h4 className="font-bold text-gray-800 mb-3">Os Três Porquinhos</h4>
+                      <audio controls className="w-full">
+                        <source src="/attached_assets/Conto 01 - Os Três Porquinhos_1754588675561.MP3" type="audio/mpeg" />
+                        Seu navegador não suporta o elemento de áudio.
+                      </audio>
+                    </div>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-gradient-to-br from-white to-orange-50 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex flex-col items-center">
+                      <img src={audioIcon} alt="Ícone de áudio" className="w-16 h-16 mb-4" />
+                      <h4 className="font-bold text-gray-800 mb-3">Chapeuzinho Vermelho</h4>
+                      <audio controls className="w-full">
+                        <source src="/attached_assets/Conto 02 - Chapéuzinho Vermelho_1754588675561.MP3" type="audio/mpeg" />
+                        Seu navegador não suporta o elemento de áudio.
+                      </audio>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+              
+              <p className="text-sm text-gray-500 mb-8">
+                ✨ + 8 histórias completas disponíveis após a compra
+              </p>
+            </div>
+
             <div className="text-center mt-12">
-              <Button asChild className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-full font-semibold text-lg px-8 py-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+              <Button asChild className="bg-gradient-to-r from-blue-500 to-orange-500 hover:from-blue-600 hover:to-orange-600 text-white rounded-full font-semibold text-lg px-8 py-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
                 <a href="#comprar">
                   <Heart className="mr-2 w-5 h-5" />
                   Quero o conteúdo completo agora!
@@ -310,9 +353,9 @@ export default function Home() {
                 <CardContent className="p-8 text-center relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-pink-500 text-white px-3 py-1 text-xs font-bold rounded-bl-lg">ÁUDIO</div>
                   <img 
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80" 
-                    alt="Criança ouvindo histórias com fones" 
-                    className="w-full h-32 object-cover rounded-lg mb-6 group-hover:scale-110 transition-transform duration-300"
+                    src={audioIcon} 
+                    alt="Ícone de áudio para histórias narradas" 
+                    className="w-full h-32 object-contain rounded-lg mb-6 group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="bg-pink-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-gentle">
                     <Headphones className="text-3xl text-pink-600" />
@@ -688,7 +731,7 @@ export default function Home() {
           
           <div className="border-t border-gray-700 pt-8 text-center">
             <p className="text-gray-400 mb-4">
-              © 2024 Combo Noites Felizes. Todos os direitos reservados.
+              © 2025 Combo Noites Felizes. Todos os direitos reservados.
             </p>
             <div className="flex justify-center items-center space-x-4 text-sm text-gray-500">
               <span>Pagamento 100% seguro</span>
