@@ -9,6 +9,7 @@ import guiaTempoTelaImage from "@assets/54ee77c2baada501_1754587158205.png";
 import contosClassicosImage from "@assets/4aa56f11d45_1754587158206.png";
 import guiaTempoTelaCard from "@assets/54ee77c2baada501_1754588200414.png";
 import contosClassicosCard from "@assets/4aa56f11d45_1754588200415.png";
+import acalmaKidsLogo from "@assets/ChatGPT Image 7 de ago. de 2025, 14_41_31_1754588504433.png";
 
 
 export default function Home() {
@@ -33,17 +34,13 @@ export default function Home() {
     <div className="min-h-screen bg-neutral-cream">
       {/* Header */}
       <header className="bg-white/95 backdrop-blur-sm shadow-lg fixed w-full top-0 z-50 border-b border-purple-100">
-        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <div className="relative">
-              <Moon className="text-2xl md:text-3xl text-primary-purple animate-bounce-gentle" />
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full animate-ping"></div>
-            </div>
-            <span className="text-lg md:text-xl font-bold text-gray-800">Combo Noites Felizes</span>
+        <div className="container mx-auto px-4 py-2 md:py-4 flex justify-between items-center min-h-[70px] md:min-h-[80px]">
+          <div className="flex items-center">
+            <img src={acalmaKidsLogo} alt="Acalma Kids" className="h-14 sm:h-16 md:h-20 lg:h-24 w-auto max-w-[180px] sm:max-w-[200px] md:max-w-[240px]" />
           </div>
-          <Button asChild className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-sm md:text-base px-4 md:px-6">
+          <Button asChild className="bg-gradient-to-r from-blue-400 to-orange-400 hover:from-blue-500 hover:to-orange-500 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-sm md:text-base lg:text-lg px-4 md:px-6 lg:px-8 py-2 md:py-3">
             <a href="#comprar">
-              <Heart className="mr-1 md:mr-2 w-4 h-4" />
+              <Heart className="mr-1 md:mr-2 lg:mr-3 w-4 h-4 md:w-5 md:h-5" />
               <span className="hidden sm:inline">Comprar Agora</span>
               <span className="sm:hidden">Comprar</span>
             </a>
@@ -51,7 +48,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="pt-16">
+      <main className="pt-20 md:pt-24">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 py-16 px-4 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-600/5 to-pink-600/5"></div>
@@ -65,7 +62,7 @@ export default function Home() {
                   Descubra como criar uma rotina saudável com o <strong>Guia do Tempo de Tela</strong> + <strong>10 histórias clássicas infantis em PDF</strong> + <strong>áudios narrados para dormir</strong>
                 </p>
                 <div className="flex flex-col gap-4 items-center lg:items-start">
-                  <Button asChild size="lg" className="w-full sm:w-auto bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white rounded-full font-semibold text-lg md:text-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 hover:scale-105 transition-all duration-300 animate-pulse-soft px-6 md:px-8 py-3 md:py-4">
+                  <Button asChild size="lg" className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-orange-500 hover:from-blue-600 hover:to-orange-600 text-white rounded-full font-semibold text-lg md:text-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 hover:scale-105 transition-all duration-300 animate-pulse-soft px-6 md:px-8 py-3 md:py-4">
                     <a href="#comprar" className="flex items-center justify-center">
                       <Heart className="mr-2 md:mr-3 animate-bounce-gentle w-5 h-5 md:w-6 md:h-6" />
                       <span className="text-base md:text-lg">QUERO AJUDAR MEU FILHO AGORA</span>
@@ -125,11 +122,11 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {/* 10 Contos Clássicos */}
               <div className="animate-slide-up">
-                <Card className="w-full max-w-md mx-auto bg-gradient-to-br from-white to-purple-50 shadow-xl hover:shadow-2xl transition-all duration-300 group">
+                <Card className="w-full max-w-md mx-auto bg-gradient-to-br from-white to-blue-50 shadow-xl hover:shadow-2xl transition-all duration-300 group">
                   <CardContent className="p-6">
                     <div className="text-center mb-4">
-                      <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <BookOpen className="text-2xl text-purple-600" />
+                      <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <BookOpen className="text-2xl text-blue-500" />
                       </div>
                       <h3 className="text-xl font-bold text-gray-800 mb-2">10 Contos Clássicos</h3>
                       <p className="text-sm text-gray-600 mb-4">Histórias atemporais para criar momentos especiais com seu filho</p>

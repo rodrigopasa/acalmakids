@@ -27,6 +27,8 @@
   /* Custom colors for the landing page */
   --primary-purple: hsl(264, 57%, 68%);
   --primary-blue: hsl(199, 89%, 73%);
+  --acalma-blue: hsl(195, 100%, 70%);
+  --acalma-orange: hsl(32, 100%, 70%);
   --secondary-green: hsl(142, 76%, 73%);
   --secondary-yellow: hsl(48, 96%, 76%);
   --accent-coral: hsl(349, 89%, 70%);
@@ -76,6 +78,14 @@
     color: var(--primary-blue);
   }
   
+  .text-acalma-blue {
+    color: var(--acalma-blue);
+  }
+  
+  .text-acalma-orange {
+    color: var(--acalma-orange);
+  }
+  
   .text-accent-coral {
     color: var(--accent-coral);
   }
@@ -86,6 +96,14 @@
   
   .bg-primary-blue {
     background-color: var(--primary-blue);
+  }
+  
+  .bg-acalma-blue {
+    background-color: var(--acalma-blue);
+  }
+  
+  .bg-acalma-orange {
+    background-color: var(--acalma-orange);
   }
   
   .bg-secondary-green {
