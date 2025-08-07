@@ -158,7 +158,7 @@ export default function Home() {
                     <div className="space-y-3">
                       <div className="w-full h-96 bg-gray-100 rounded-lg overflow-hidden shadow-inner">
                         <iframe
-                          src="https://dimensaonerd.com.br/wp-content/uploads/2025/08/Copia-de-Copia-de-ebook-Desafiando-o-digitalDocumento-A4.pdf"
+                          src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://dimensaonerd.com.br/wp-content/uploads/2025/08/Copia-de-Copia-de-ebook-Desafiando-o-digitalDocumento-A4.pdf"
                           className="w-full h-full border-0"
                           title="Prévia - 10 Contos Clássicos"
                         />
@@ -211,7 +211,7 @@ export default function Home() {
                     <div className="space-y-3">
                       <div className="w-full h-96 bg-gray-100 rounded-lg overflow-hidden shadow-inner">
                         <iframe
-                          src="https://dimensaonerd.com.br/wp-content/uploads/2025/08/Previa-Guia-de-Tela.pdf"
+                          src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://dimensaonerd.com.br/wp-content/uploads/2025/08/Previa-Guia-de-Tela.pdf"
                           className="w-full h-full border-0"
                           title="Prévia - Guia do Tempo de Tela"
                         />
