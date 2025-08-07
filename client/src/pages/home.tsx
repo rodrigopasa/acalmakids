@@ -7,6 +7,8 @@ import { useEffect } from "react";
 import childImage from "@assets/ChatGPT Image 7 de ago. de 2025, 12_46_31_1754586753926.png";
 import guiaTempoTelaImage from "@assets/54ee77c2baada501_1754587158205.png";
 import contosClassicosImage from "@assets/4aa56f11d45_1754587158206.png";
+import guiaTempoTelaCard from "@assets/54ee77c2baada501_1754588200414.png";
+import contosClassicosCard from "@assets/4aa56f11d45_1754588200415.png";
 
 
 export default function Home() {
@@ -279,9 +281,9 @@ export default function Home() {
                 <CardContent className="p-8 text-center relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-purple-500 text-white px-3 py-1 text-xs font-bold rounded-bl-lg">GUIA</div>
                   <img 
-                    src="https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80" 
+                    src={guiaTempoTelaCard} 
                     alt="Criança usando tablet com moderação" 
-                    className="w-full h-32 object-cover rounded-lg mb-6 group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-48 object-contain rounded-lg mb-6 group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-gentle">
                     <Smartphone className="text-3xl text-primary-purple" />
@@ -295,9 +297,9 @@ export default function Home() {
                 <CardContent className="p-8 text-center relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-green-500 text-white px-3 py-1 text-xs font-bold rounded-bl-lg">PDFs</div>
                   <img 
-                    src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80" 
+                    src={contosClassicosCard} 
                     alt="Livros de histórias infantis" 
-                    className="w-full h-32 object-cover rounded-lg mb-6 group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-48 object-contain rounded-lg mb-6 group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-gentle">
                     <BookOpen className="text-3xl text-green-600" />
