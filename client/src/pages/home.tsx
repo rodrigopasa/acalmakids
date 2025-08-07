@@ -134,45 +134,24 @@ export default function Home() {
                       
                     </div>
 
-                    <div className="bg-white rounded-lg shadow-lg p-6 mb-4 group-hover:shadow-xl transition-shadow">
-                      <div className="flex flex-col lg:flex-row gap-6 items-center">
-                        {/* Mockup do livro */}
-                        <div className="flex-shrink-0">
-                          <img 
-                            src={contosClassicosImage} 
-                            alt="Capa do 10 Contos Clássicos"
-                            className="w-48 h-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-105 shadow-lg"
-                          />
-                        </div>
-                        
-                        {/* Leitor PDF com aparência de livro */}
-                        <div className="flex-1 max-w-md">
-                          <div className="relative">
-                            {/* Efeito de páginas empilhadas */}
-                            <div className="absolute -top-1 -right-1 w-full h-full bg-gray-200 rounded-lg transform rotate-1"></div>
-                            <div className="absolute -top-0.5 -right-0.5 w-full h-full bg-gray-300 rounded-lg transform rotate-0.5"></div>
-                            
-                            {/* Leitor principal */}
-                            <div className="relative bg-white rounded-lg shadow-xl border-2 border-gray-200 overflow-hidden" style={{height: '400px'}}>
-                              <div className="bg-gradient-to-r from-amber-100 to-orange-100 px-4 py-2 border-b border-gray-200">
-                                <div className="flex items-center gap-2">
-                                  <BookOpen className="w-4 h-4 text-amber-700" />
-                                  <span className="text-sm font-medium text-amber-800">10 Contos Clássicos - Prévia</span>
-                                </div>
-                              </div>
-                              <iframe
-                                src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://dimensaonerd.com.br/wp-content/uploads/2025/08/Copia-de-Copia-de-ebook-Desafiando-o-digitalDocumento-A4.pdf"
-                                className="w-full h-full border-0"
-                                title="Prévia - 10 Contos Clássicos"
-                                style={{height: 'calc(100% - 48px)'}}
-                              />
-                            </div>
-                          </div>
-                        </div>
+                    <div className="bg-white rounded-lg shadow-inner p-4 mb-4 group-hover:shadow-lg transition-shadow">
+                      <div className="relative overflow-hidden rounded-lg">
+                        <img 
+                          src={contosClassicosImage} 
+                          alt="Capa do 10 Contos Clássicos"
+                          className="w-full h-auto max-h-80 object-contain mx-auto transition-transform duration-300 group-hover:scale-105"
+                        />
                       </div>
                     </div>
 
                     <div className="space-y-3">
+                      <div className="w-full h-96 bg-gray-100 rounded-lg overflow-hidden shadow-inner">
+                        <iframe
+                          src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://dimensaonerd.com.br/wp-content/uploads/2025/08/Copia-de-Copia-de-ebook-Desafiando-o-digitalDocumento-A4.pdf"
+                          className="w-full h-full border-0"
+                          title="Prévia - 10 Contos Clássicos"
+                        />
+                      </div>
                       
                       <div className="text-center">
                         <p className="text-xs text-gray-500">
@@ -197,45 +176,24 @@ export default function Home() {
                       
                     </div>
 
-                    <div className="bg-white rounded-lg shadow-lg p-6 mb-4 group-hover:shadow-xl transition-shadow">
-                      <div className="flex flex-col lg:flex-row gap-6 items-center">
-                        {/* Mockup do livro */}
-                        <div className="flex-shrink-0">
-                          <img 
-                            src={guiaTempoTelaImage} 
-                            alt="Capa do Guia do Tempo de Tela"
-                            className="w-48 h-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-105 shadow-lg"
-                          />
-                        </div>
-                        
-                        {/* Leitor PDF com aparência de livro */}
-                        <div className="flex-1 max-w-md">
-                          <div className="relative">
-                            {/* Efeito de páginas empilhadas */}
-                            <div className="absolute -top-1 -right-1 w-full h-full bg-gray-200 rounded-lg transform rotate-1"></div>
-                            <div className="absolute -top-0.5 -right-0.5 w-full h-full bg-gray-300 rounded-lg transform rotate-0.5"></div>
-                            
-                            {/* Leitor principal */}
-                            <div className="relative bg-white rounded-lg shadow-xl border-2 border-gray-200 overflow-hidden" style={{height: '400px'}}>
-                              <div className="bg-gradient-to-r from-blue-100 to-purple-100 px-4 py-2 border-b border-gray-200">
-                                <div className="flex items-center gap-2">
-                                  <Smartphone className="w-4 h-4 text-blue-700" />
-                                  <span className="text-sm font-medium text-blue-800">Guia do Tempo de Tela - Prévia</span>
-                                </div>
-                              </div>
-                              <iframe
-                                src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://dimensaonerd.com.br/wp-content/uploads/2025/08/Previa-Guia-de-Tela.pdf"
-                                className="w-full h-full border-0"
-                                title="Prévia - Guia do Tempo de Tela"
-                                style={{height: 'calc(100% - 48px)'}}
-                              />
-                            </div>
-                          </div>
-                        </div>
+                    <div className="bg-white rounded-lg shadow-inner p-4 mb-4 group-hover:shadow-lg transition-shadow">
+                      <div className="relative overflow-hidden rounded-lg">
+                        <img 
+                          src={guiaTempoTelaImage} 
+                          alt="Capa do Guia do Tempo de Tela"
+                          className="w-full h-auto max-h-80 object-contain mx-auto transition-transform duration-300 group-hover:scale-105"
+                        />
                       </div>
                     </div>
 
                     <div className="space-y-3">
+                      <div className="w-full h-96 bg-gray-100 rounded-lg overflow-hidden shadow-inner">
+                        <iframe
+                          src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://dimensaonerd.com.br/wp-content/uploads/2025/08/Previa-Guia-de-Tela.pdf"
+                          className="w-full h-full border-0"
+                          title="Prévia - Guia do Tempo de Tela"
+                        />
+                      </div>
                       
                       <div className="text-center">
                         <p className="text-xs text-gray-500">
