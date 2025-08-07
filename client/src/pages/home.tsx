@@ -147,7 +147,7 @@ export default function Home() {
                     <div className="space-y-3">
                       <div className="w-full h-96 bg-gray-100 rounded-lg overflow-hidden shadow-inner">
                         <iframe
-                          src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://dimensaonerd.com.br/wp-content/uploads/2025/08/Copia-de-Copia-de-ebook-Desafiando-o-digitalDocumento-A4.pdf"
+                          src="https://drive.google.com/viewerng/viewer?embedded=true&url=https%3A//dimensaonerd.com.br/wp-content/uploads/2025/08/Copia-de-Copia-de-ebook-Desafiando-o-digitalDocumento-A4.pdf"
                           className="w-full h-full border-0"
                           title="Prévia - 10 Contos Clássicos"
                         />
@@ -222,7 +222,7 @@ export default function Home() {
                       <img src={audioIcon} alt="Ícone de áudio" className="w-16 h-16 mb-4" />
                       <h4 className="font-bold text-gray-800 mb-3">Os Três Porquinhos</h4>
                       <audio controls className="w-full">
-                        <source src="/attached_assets/Conto 01 - Os Três Porquinhos_1754588675561.MP3" type="audio/mpeg" />
+                        <source src="/conto01.mp3" type="audio/mpeg" />
                         Seu navegador não suporta o elemento de áudio.
                       </audio>
                     </div>
@@ -235,7 +235,7 @@ export default function Home() {
                       <img src={audioIcon} alt="Ícone de áudio" className="w-16 h-16 mb-4" />
                       <h4 className="font-bold text-gray-800 mb-3">Chapeuzinho Vermelho</h4>
                       <audio controls className="w-full">
-                        <source src="/attached_assets/Conto 02 - Chapéuzinho Vermelho_1754588675561.MP3" type="audio/mpeg" />
+                        <source src="/conto02.mp3" type="audio/mpeg" />
                         Seu navegador não suporta o elemento de áudio.
                       </audio>
                     </div>
