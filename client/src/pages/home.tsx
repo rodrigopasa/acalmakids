@@ -123,7 +123,7 @@ export default function Home() {
                 <PDFPreview
                   title="10 Contos Clássicos"
                   description="Histórias atemporais para criar momentos especiais com seu filho"
-                  pdfUrl="/contos-classicos.pdf"
+                  pdfUrl="https://dimensaonerd.com.br/wp-content/uploads/2025/08/Copia-de-Copia-de-ebook-Desafiando-o-digitalDocumento-A4.pdf"
                   maxPages={4}
                   icon="book"
                 />
@@ -133,7 +133,7 @@ export default function Home() {
                 <PDFPreview
                   title="Guia do Tempo de Tela"
                   description="Estratégias práticas para uma infância equilibrada na era digital"
-                  pdfUrl="/guia-tempo-tela.pdf"
+                  pdfUrl="https://dimensaonerd.com.br/wp-content/uploads/2025/08/Previa-Guia-de-Tela.pdf"
                   maxPages={5}
                   icon="guide"
                 />
