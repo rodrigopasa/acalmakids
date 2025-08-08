@@ -1,38 +1,30 @@
-# Stage 1: build
+# Etapa 1: Build
 FROM node:18-alpine AS build
 
 WORKDIR /app
 
-# Copiar arquivos de definição de dependências
+# Copia package.json e package-lock.json e instala dependências
 COPY package*.json ./
-
-# Instalar todas dependências (prod + dev) para build funcionar
 RUN npm ci
 
-# Copiar todo o código fonte
+# Copia todo o código
 COPY . .
 
-# Rodar build da aplicação
+# Build do frontend e backend
 RUN npm run build
 
-# Stage 2: produção
+# Etapa 2: Produção
 FROM node:18-alpine AS production
 
 WORKDIR /app
 
-# Definir NODE_ENV para produção
-ENV NODE_ENV=production
-
-# Copiar apenas arquivos de dependências e código buildado
-COPY package*.json ./
+# Copia os arquivos necessários da etapa build para a imagem final
 COPY --from=build /app/dist ./dist
-COPY --from=build /app/public ./public
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/package.json ./package.json
 
-# Instalar apenas dependências de produção
-RUN npm ci --omit=dev
-
-# Expor a porta que seu app usa
+# Exponha a porta que seu app usa (ajuste se necessário)
 EXPOSE 5000
 
-# Comando para iniciar a aplicação
+# Comando para iniciar seu servidor
 CMD ["node", "dist/index.js"]
