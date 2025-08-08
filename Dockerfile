@@ -1,46 +1,38 @@
-# =========================
-# Etapa 1: Build
-# =========================
-FROM node:18-alpine AS builder
+# Stage 1: build
+FROM node:18-alpine AS build
 
-# Diretório de trabalho
 WORKDIR /app
 
-# Copiar arquivos de dependências
+# Copiar arquivos de definição de dependências
 COPY package*.json ./
 
-# Instalar TODAS as dependências (produção + desenvolvimento)
+# Instalar todas dependências (prod + dev) para build funcionar
 RUN npm ci
 
-# Copiar todo o código
+# Copiar todo o código fonte
 COPY . .
 
-# Gerar a build
+# Rodar build da aplicação
 RUN npm run build
 
-
-# =========================
-# Etapa 2: Execução
-# =========================
-FROM node:18-alpine
+# Stage 2: produção
+FROM node:18-alpine AS production
 
 WORKDIR /app
 
-# Copiar apenas arquivos de produção
+# Definir NODE_ENV para produção
+ENV NODE_ENV=production
+
+# Copiar apenas arquivos de dependências e código buildado
 COPY package*.json ./
+COPY --from=build /app/dist ./dist
+COPY --from=build /app/public ./public
 
 # Instalar apenas dependências de produção
 RUN npm ci --omit=dev
 
-# Copiar build pronta da etapa anterior
-COPY --from=builder /app/dist ./dist
-
-# Criar usuário não-root por segurança
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-USER appuser
-
-# Expor porta
+# Expor a porta que seu app usa
 EXPOSE 5000
 
-# Comando para rodar a aplicação
-CMD ["npm", "start"]
+# Comando para iniciar a aplicação
+CMD ["node", "dist/index.js"]
