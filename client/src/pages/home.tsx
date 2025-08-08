@@ -607,10 +607,10 @@ export default function Home() {
               
               <AccordionItem value="item-3" className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 <AccordionTrigger className="px-4 xs:px-6 py-3 xs:py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 text-sm xs:text-base">
-                  Posso pagar with PIX ou cartão?
+                  Posso pagar com PIX ou cartão?
                 </AccordionTrigger>
                 <AccordionContent className="px-4 xs:px-6 pb-3 xs:pb-4 text-gray-600 leading-relaxed text-sm xs:text-base">
-                  Sim! Aceitamos PIX (desconto de 10%), cartão de crédito (parcelamento em até 3x sem juros) e boleto bancário.
+                  Sim! Aceitamos PIX, cartão de crédito (parcelamento em até 2x) e boleto bancário.
                 </AccordionContent>
               </AccordionItem>
               
