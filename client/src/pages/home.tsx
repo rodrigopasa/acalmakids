@@ -392,11 +392,9 @@ export default function Home() {
               <Card className="shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-purple-50">
                 <CardContent className="p-6 md:p-8">
                   <div className="flex items-center mb-4">
-                    <img 
-                      src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
-                      alt="Ana Paula" 
-                      className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-4 border-purple-200"
-                    />
+                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-white font-bold text-lg md:text-xl border-4 border-purple-200">
+                      AP
+                    </div>
                     <div className="ml-4">
                       <h4 className="font-semibold text-gray-800 text-lg">Ana Paula</h4>
                       <p className="text-sm text-gray-600">mãe do Lucas, 6 anos</p>
@@ -418,11 +416,9 @@ export default function Home() {
               <Card className="shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-blue-50">
                 <CardContent className="p-6 md:p-8">
                   <div className="flex items-center mb-4">
-                    <img 
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
-                      alt="Felipe" 
-                      className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-4 border-blue-200"
-                    />
+                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white font-bold text-lg md:text-xl border-4 border-blue-200">
+                      FE
+                    </div>
                     <div className="ml-4">
                       <h4 className="font-semibold text-gray-800 text-lg">Felipe</h4>
                       <p className="text-sm text-gray-600">pai da Maria, 8 anos</p>
@@ -446,11 +442,9 @@ export default function Home() {
               <Card className="shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-green-50">
                 <CardContent className="p-6 md:p-8">
                   <div className="flex items-center mb-4">
-                    <img 
-                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
-                      alt="Carla" 
-                      className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-4 border-green-200"
-                    />
+                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-green-400 to-emerald-400 flex items-center justify-center text-white font-bold text-lg md:text-xl border-4 border-green-200">
+                      CA
+                    </div>
                     <div className="ml-4">
                       <h4 className="font-semibold text-gray-800 text-lg">Carla Santos</h4>
                       <p className="text-sm text-gray-600">mãe do Pedro, 5 anos</p>
@@ -472,11 +466,9 @@ export default function Home() {
               <Card className="shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-orange-50">
                 <CardContent className="p-6 md:p-8">
                   <div className="flex items-center mb-4">
-                    <img 
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
-                      alt="Ricardo" 
-                      className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-4 border-orange-200"
-                    />
+                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-orange-400 to-red-400 flex items-center justify-center text-white font-bold text-lg md:text-xl border-4 border-orange-200">
+                      RI
+                    </div>
                     <div className="ml-4">
                       <h4 className="font-semibold text-gray-800 text-lg">Ricardo Lima</h4>
                       <p className="text-sm text-gray-600">pai da Sofia, 7 anos</p>
