@@ -3,35 +3,39 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
-export default defineConfig({
-  plugins: [
-    react(),
-    runtimeErrorOverlay(),
-    ...(process.env.NODE_ENV !== "production" &&
-    process.env.REPL_ID !== undefined
-      ? [
-          await import("@replit/vite-plugin-cartographer").then((m) =>
-            m.cartographer(),
-          ),
-        ]
-      : []),
-  ],
-  resolve: {
-    alias: {
-      "@": path.resolve(import.meta.dirname, "client", "src"),
-      "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+async function getConfig() {
+  let cartographerPlugin = [];
+
+  if (process.env.NODE_ENV !== "production" && process.env.REPL_ID !== undefined) {
+    const m = await import("@replit/vite-plugin-cartographer");
+    cartographerPlugin = [m.cartographer()];
+  }
+
+  return defineConfig({
+    plugins: [
+      react(),
+      runtimeErrorOverlay(),
+      ...cartographerPlugin,
+    ],
+    resolve: {
+      alias: {
+        "@": path.resolve(new URL(import.meta.url).pathname, "..", "client", "src"),
+        "@shared": path.resolve(new URL(import.meta.url).pathname, "..", "shared"),
+        "@assets": path.resolve(new URL(import.meta.url).pathname, "..", "attached_assets"),
+      },
     },
-  },
-  root: path.resolve(import.meta.dirname, "client"),
-  build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
-    emptyOutDir: true,
-  },
-  server: {
-    fs: {
-      strict: true,
-      deny: ["**/.*"],
+    root: path.resolve(new URL(import.meta.url).pathname, "..", "client"),
+    build: {
+      outDir: path.resolve(new URL(import.meta.url).pathname, "..", "dist/public"),
+      emptyOutDir: true,
     },
-  },
-});
+    server: {
+      fs: {
+        strict: true,
+        deny: ["**/.*"],
+      },
+    },
+  });
+}
+
+export default getConfig();
