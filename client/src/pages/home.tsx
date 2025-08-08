@@ -640,7 +640,7 @@ export default function Home() {
             <Card className="p-8 md:p-12 shadow-2xl max-w-2xl mx-auto">
               <CardContent className="p-0">
                 <Button asChild size="lg" className="w-full bg-accent-coral hover:bg-pink-600 text-white rounded-full font-bold text-2xl py-6 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 mb-6">
-                  <a href="LINK_DO_CHECKOUT">
+                  <a href="https://pay.hotmart.com/SEU_LINK_AQUI" target="_blank" rel="noopener noreferrer">
                     <Heart className="mr-2" />
                     Quero transformar a rotina do meu filho!
                   </a>
