@@ -57,10 +57,10 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
               <div className="text-center lg:text-left animate-slide-up order-2 lg:order-1">
                 <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight mb-3 sm:mb-4 md:mb-6">
-                  📱Seu Filho, Seja um Bebê ou uma Criança, Já Parece <span className="gradient-text">Hipnotizado Pelas Telas?</span>​
+                  📱O Mundo está roubando a inocência de <span className="gradient-text">nossos filhos!</span>​
                 </h1>
                 <p className="text-base xs:text-lg sm:text-xl md:text-2xl text-gray-600 mb-4 sm:mb-6 md:mb-8 leading-relaxed">
-                  Descubra como criar uma rotina saudável com o <strong>Guia do Tempo de Tela</strong> + <strong>10 histórias clássicas infantis em PDF</strong> + <strong>áudios narrados para dormir</strong>
+                  Descubra como criar uma rotina saudável com o <strong>Guia do Tempo de Tela</strong> + <strong>10 histórias clássicas infantis em PDF</strong> + <strong>áudios narrados para dormir e 50 histórinhas para fortalecer a fé e os valores</strong>
                 </p>
                 <div className="flex flex-col gap-3 sm:gap-4 items-center lg:items-start">
                   <Button asChild size="lg" className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-orange-500 hover:from-blue-600 hover:to-orange-600 text-white rounded-full font-semibold text-sm xs:text-base sm:text-lg md:text-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 hover:scale-105 transition-all duration-300 animate-pulse-soft px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4">
