@@ -9,6 +9,7 @@ import guiaTempoTelaImage from "@assets/54ee77c2baada501_1754587158205.png";
 import contosClassicosImage from "@assets/4aa56f11d45_1754587158206.png";
 import guiaTempoTelaCard from "@assets/54ee77c2baada501_1754588200414.png";
 import contosClassicosCard from "@assets/4aa56f11d45_1754588200415.png";
+import historinhasbiblicas from "@assets/4aa56f11d45_17545882004156.png";
 import acalmaKidsLogo from "@assets/ChatGPT Image 7 de ago. de 2025, 14_41_31_1754588504433.png";
 import audioIcon from "@assets/unnamed_1754588765007.png";
 
@@ -346,6 +347,22 @@ export default function Home() {
                   </div>
                   <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4">📖 10 Contos clássicos em PDF</h3>
                   <p className="text-sm sm:text-base text-gray-600 leading-relaxed">Histórias atemporais para ler com seu filho e criar memórias afetivas que durarão para sempre</p>
+                </CardContent>
+              </Card>
+
+               <Card className="bg-gradient-to-br from-green-50 to-yellow-50 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:scale-105 animate-slide-up group">
+                <CardContent className="p-4 sm:p-6 md:p-8 text-center relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-green-500 text-white px-2 sm:px-3 py-0.5 sm:py-1 text-[10px] xs:text-xs font-bold rounded-bl-lg">PDFs</div>
+                  <img 
+                    src={historinhasbiblicas} 
+                    alt="Livros de histórias infantis" 
+                    className="w-full h-32 sm:h-40 md:h-48 object-contain rounded-lg mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="bg-green-100 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 animate-bounce-gentle">
+                    <BookOpen className="text-2xl sm:text-3xl text-green-600" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4">📖 50 Historinhas Bíblicas</h3>
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">50 Historinhas Bíblicas para fortalecer a fé dos seus filhos e ensinar valores que vão perdurar por toda a sua vida!</p>
                 </CardContent>
               </Card>
               
