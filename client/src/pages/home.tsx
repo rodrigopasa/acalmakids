@@ -712,6 +712,10 @@ export default function Home() {
                   <BookOpen className="mr-2 w-3 h-3 xs:w-4 xs:h-4 text-green-400" />
                   10 Contos em PDF
                 </li>
+                 <li className="flex items-center justify-center">
+                  <BookOpen className="mr-2 w-3 h-3 xs:w-4 xs:h-4 text-green-400" />
+                  50 Historinhas Bíblicas em PDF
+                </li>
                 <li className="flex items-center justify-center">
                   <Headphones className="mr-2 w-3 h-3 xs:w-4 xs:h-4 text-pink-400" />
                   10 Áudios Narrados
